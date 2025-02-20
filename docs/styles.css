@@ -1,0 +1,141 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Gerais */
+body {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+}
+
+/* Cabeçalho */
+.header-section {
+    text-align: center;
+    background-color: #1E2A47;
+    padding: 30px 0;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #FFB84D; /* Detalhe dourado */
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    font-size: 36px;
+    color: #fff;
+    font-weight: 700;
+}
+
+p {
+    color: #ffffff;
+}
+
+/* Títulos das Seções */
+.section-title {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #1E2A47;
+    border-bottom: 3px solid #FFB84D;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+/* Listas */
+ul.list-unstyled {
+    margin-left: 20px;
+    list-style-type: none;
+}
+
+ul.list-unstyled li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1E2A47;
+}
+
+/* Ícones */
+i {
+    color: #FFB84D;
+    margin-right: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    /* Centraliza o conteúdo da página */
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p, h5 {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+}
